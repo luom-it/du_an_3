@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #2e80ce;
+  --primary-color1: #575f66;
+  --primary-color2: #10375c;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* khoi phuc lai co chu ban dau */
+  font-size: 1.6rem;
+  /* font su dung cho toan bo trang */
+  font-family: "Sora", sans-serif;
+}
+/* ==================common==================== */
+.main-content {
+  width: 1170px;
+  /* cach 2  ben trinh duyet khi thu nho 24px */
+  max-width: 100% - 48px;
+  /* can giua */
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  width: 205px;
+  height: 60px;
+  border-radius: 30px;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px 46px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* =====================header======================= */
+.header {
+  background: var(--primary-color2);
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+header .body {
+  display: flex;
+  align-items: center;
+  padding: 38px 0 10px;
+}
+header .body .logo {
+  display: flex;
+}
+
+header .body .desc {
+  padding-left: 6px;
+  width: 50px;
+  color: #c9d2da;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+header .body .desc.desc1 {
+  text-align: right;
+}
+header .body .logo span {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 0.78rem; /* 77.778% */
+}
+/* nav */
+nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+header nav ul {
+  display: flex;
+}
+header nav a {
+  color: #c9d2da;
+  text-align: center;
+  padding: 8px 21px;
+  line-height: 1.75; /* 175% */
+  position: relative;
+}
+nav li.active a::before {
+  /* vì thẻ a là inline nên ko sét được width height */
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+}
+nav li.active a,
+nav a:hover {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+/* btn action */
+header .cta-group .login {
+  padding-right: 28px;
+  color: #c9d2da;
+  text-align: right;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+header .cta-group .sign-up {
+  width: 104px;
+  height: 44px;
+  padding: 8px 20px;
+  font-size: 1.6rem;
+  line-height: 2.8rem; /* 175% */
+}
+/* ==========================main=============================== */
+/* ==========================hero===============================*/
+.hero {
+  padding: 74px 110px;
+  background: var(--primary-color2);
+}
+.hero .body {
+  display: flex;
+}
+.hero .body .block-content {
+  width: 45%;
+}
+/* ben trai */
+.hero .body .block-content .heading1 {
+  padding-top: 60px;
+  width: 517px;
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.15; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+.hero .body .block-content .desc {
+  width: 468px;
+  padding-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  line-height: 1.68; /* 166.667% */
+}
+.hero .body .block-content .action {
+  padding-top: 38px;
+  display: flex;
+  align-items: center;
+}
+.hero .body .block-content .action .btn {
+  width: 55%;
+}
+.hero .body .block-content .action .desc {
+  margin-left: 38px;
+  font-weight: 400;
+  color: #fff;
+}
+/* ben phai */
+.hero .body .media-block {
+  width: 55%;
+  padding-left: 0;
+}
+.hero .body .media-block .images {
+  width: 100%;
+  display: flex;
+  padding-left: 40px;
+  padding-right: 0;
+}
+.hero .body .media-block .images .img2 {
+  padding: 65px 0 175px;
+}
+.hero .body .media-block .images .img1 {
+  width: 60%;
+  padding-bottom: 110px;
+}
+/* =======================services========================= */
+.services {
+  padding: 170px 0;
+}
+.services .body .heading2 {
+  color: var(--primary-color2);
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.services .body .desc {
+  padding-top: 18px;
+  width: 468px;
+  color: var(--primary-color1);
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+.services .body .descc {
+  margin: auto;
+}
+.services .body .infors {
+  padding-top: 70px;
+  display: flex;
+}
+.services .body .infors .infor {
+  margin-left: 130px;
+  padding-top: 35px;
+}
+.services .body .infors .infor .item {
+  display: flex;
+  padding-top: 21px;
+  align-items: center;
+}
+.services .body .infors .infor .item .desc2 {
+  padding-top: 8px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: left;
+}
+.services .body .infors .infor .item .desc1 {
+  color: var(--primary-color2);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.services .body .infors .infor .item .text {
+  padding-left: 19px;
+}
+.services .body .infors .infor .item:hover {
+  border-radius: 10px;
+  background: red;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+.services .body .action {
+  margin-top: 75px;
+}
+/* ===============================work========================== */
+.work {
+  padding: 100px 0;
+  background: #f6fbff;
+}
+.work .body .heading2 {
+  color: var(--primary-color2);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+.work .body .desc {
+  width: 468px;
+  padding-top: 18px;
+  color: var(--primary-color1);
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+.work .body .list {
+  margin-top: 86px;
+  display: flex;
+  gap: 30px;
+}
+.work .body .list .item {
+  width: 338px;
+  height: 370px;
+  border: 16px solid #eaf6ff;
+  border-radius: 4px;
+  padding: 43px 42px;
+}
+.work .body .list .item:hover {
+  border: 16px solid #2e80ce;
+}
+.work .body .list .item .desc1 {
+  padding-top: 18px;
+  color: var(--primary-color2);
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38; /* 138.462% */
+}
+.work .body .list .item .desc {
+  width: 254px;
+  padding-top: 28px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.work .body .list .item a {
+  color: var(--primary-color1);
+  display: inline-block;
+  padding-top: 18px;
+}
+.work .body .list .item a:hover {
+  color: #2e80ce;
+  font-weight: 400;
+}
+/* ==========================about_us======================= */
+.about_us {
+  padding: 170px 0;
+}
+.about_us .body {
+  display: flex;
+}
+/* ben trai */
+.about_us .body .images {
+  width: 570px;
+  height: 491px;
+  position: relative;
+}
+.about_us .body .img1 {
+  width: 512px;
+  height: 370px;
+  background-image: url(/assets/image/Rectangle\ 4450.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.about_us .body .img2 {
+  width: 332px;
+  height: 370px;
+  background-image: url(/assets/image/Rectangle\ 4449.jpg);
+  position: absolute;
+  top: 121px;
+  left: 238px;
+}
+/* ben phai */
+.about_us .body .text {
+  margin-left: 350px;
+}
+.about_us .body .text .heading2 {
+  padding: 82px 0 18px;
+  width: 470px;
+  color: var(--primary-color2);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+.about_us .body .text .desc {
+  padding-bottom: 38px;
+  color: #575f66;
+  font-size: 1.8rem;
+  line-height: 30px; /* 166.667% */
+}
+/* ==========================Team========================= */
+.Team .body .heading2 {
+  margin-bottom: 38px;
+  color: var(--primary-color2);
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+.Team .body .nut a {
+  display: block;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.Team .list {
+  margin-top: 70px;
+  display: flex;
+  gap: 34px;
+}
