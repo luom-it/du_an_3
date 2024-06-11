@@ -5,6 +5,8 @@
   --primary-color: #2e80ce;
   --primary-color1: #575f66;
   --primary-color2: #10375c;
+  --font-heading: "Inter", sans-serif;
+  --font-heading2: "Open Sans", sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -49,6 +51,7 @@ a {
   background: var(--primary-color2);
 }
 .header.fixed {
+  z-index: 1;
   position: sticky;
   top: -28px;
 }
@@ -344,6 +347,7 @@ header .cta-group .sign-up {
   letter-spacing: -1px;
 }
 .about_us .body .text .desc {
+  width: 468px;
   padding-bottom: 38px;
   color: #575f66;
   font-size: 1.8rem;
@@ -369,6 +373,15 @@ header .cta-group .sign-up {
   display: flex;
   gap: 30px;
 }
+.Team .list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Team .list .item:hover {
+  background: #eaf6ff;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
 .Team .list .item .desc {
   color: var(--primary-color2);
   font-weight: 400;
@@ -383,4 +396,266 @@ header .cta-group .sign-up {
 .Team .body .icon {
   display: block;
   margin: auto;
+}
+/* ======================CTA1===================== */
+.CTA1 .body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 170px;
+  padding-left: 514px;
+  background-color: var(--primary-color);
+  z-index: -2;
+  position: relative;
+}
+.CTA1 .body .heading2 {
+  padding-top: 76px;
+  width: 489px;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+.CTA1 .body .desc {
+  width: 586px;
+  padding-top: 18px;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+.CTA1 .body .icon {
+  display: flex;
+  padding-top: 38px;
+  padding-bottom: 167px;
+}
+.CTA1 .body .icon1 {
+  padding-right: 28px;
+}
+.CTA1 .body .img {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  z-index: -1;
+}
+/* ===========================Blog========================== */
+.Blog .body {
+  padding: 170px 0;
+  display: flex;
+}
+.Blog .body .text .heading2 {
+  padding-top: 68px;
+  width: 470px;
+  color: var(--primary-color2);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+.Blog .body .text .action {
+  display: block;
+  padding: 28px 0;
+  color: var(--primary-color2);
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  line-height: 1.56; /* 155.556% */
+  text-decoration-line: underline;
+}
+/* right */
+.Blog .body .list {
+  display: flex;
+  margin-left: 130px;
+}
+
+.Blog .body .list .item .desc {
+  padding-top: 18px;
+  width: 224px;
+  color: var(--primary-color2);
+  font-weight: 600;
+  line-height: 1.63; /* 162.5% */
+}
+.Blog .body .list .item .desc1 {
+  color: var(--primary-color1);
+  font-size: 1.4rem;
+  line-height: 1.72; /* 171.429% */
+}
+.Blog .body .list .item .ab {
+  display: block;
+  padding-top: 12px;
+  color: var(--primary-color2);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.Blog .body .list .item .ab:hover {
+  color: var(--primary-color);
+}
+.Blog .body .list .item:first-child {
+  padding-right: 30px;
+}
+.Blog .body .list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Blog .body .list .item:hover {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+/* ====================CTA2=========================== */
+.CTA2 .body {
+  background: #f6fbff;
+  padding-bottom: 100px;
+}
+.CTA2 .body .heading2 {
+  padding-top: 100px;
+  color: var(--primary-color2);
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+  position: relative;
+}
+.CTA2 .body .heading2::after {
+  display: block;
+  content: "";
+  width: 136px;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 178px;
+  left: 520px;
+}
+.CTA2 .body .desc {
+  padding: 38px 0;
+  width: 617px;
+  color: var(--primary-color1);
+  text-align: center;
+  margin: auto;
+  line-height: 1.75; /* 175% */
+}
+.CTA2 .body .btn1 {
+  display: block;
+  margin: auto;
+  padding: 15px 41px;
+}
+/* =======================footer==================== */
+.footer {
+  background-color: var(--primary-color2);
+}
+.footer .body1 {
+  padding: 100px 0 42px;
+  position: relative;
+  display: flex;
+}
+.footer .body1 .logo {
+  display: flex;
+}
+.footer .body1 .desc {
+  padding-left: 6px;
+  width: 50px;
+  color: #c9d2da;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+.footer .body1 .desc.desc1 {
+  text-align: right;
+}
+.footer .body1 .logo span {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 0.78rem; /* 77.778% */
+}
+.footer .body1 .logos .desc2 {
+  width: 336px;
+  padding-top: 21px;
+  color: #a9b3bb;
+  font-family: var(--font-heading2);
+  line-height: 1.75; /* 175% */
+}
+.footer .body1 .list {
+  display: flex;
+  margin-left: 78px;
+}
+.footer .body1 .list .desc1 {
+  color: #fff;
+  font-family: var(--font-heading2);
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.footer .body1 .list .desc {
+  width: 145px;
+}
+.footer .body1 .list .desc a {
+  color: #a9b3bb;
+  font-family: var(--font-heading2);
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .body1 .list .item1 ul {
+  padding-top: 20px;
+}
+.footer .body1 .list .item1 .desc2 {
+  padding-top: 28px;
+}
+.footer .body1 .list .item2 {
+  padding: 0 60px;
+}
+.footer .body1 .list .item2 ul {
+  padding-top: 20px;
+}
+.footer .body1 .list .item2 .desc2 {
+  padding-top: 28px;
+}
+.footer .body1 .list .item3 .icon {
+  padding-top: 20px;
+}
+.footer .body1 .list .item3 .desc3 {
+  padding-top: 28px;
+}
+.footer .body1 .list .item3 .desc4 {
+  padding-top: 20px;
+  width: 273px;
+  color: #a9b3bb;
+}
+.footer .body1 .list .form1 {
+  display: flex;
+  margin-top: 10px;
+}
+.footer .body1 .list .form1 .email-input {
+  padding: 10px 65px 10px 10px;
+  color: #9ca8b1;
+  background-color: var(--primary-color2);
+  border: none;
+}
+.footer .body1 .list .form1 .abc {
+  padding: 10px 21px;
+  margin-left: 12px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+.footer .body1 .list .form1 .email-input:hover {
+  border-radius: 4px;
+  border: 1px solid #406181;
+}
+.footer .body1::after {
+  content: "";
+  width: 1170px;
+  height: 1px;
+  background: #406181;
+  position: absolute;
+  top: 400px;
+}
+.footer .body .desc5 {
+  color: #aab3ba;
+  text-align: center;
+  font-family: var(--font-heading2);
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .body {
+  padding-bottom: 42px;
 }
